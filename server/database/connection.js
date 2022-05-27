@@ -6,7 +6,7 @@ const connectDB = async () => {
         const con = await mongoose.connect(process.env.MONGO_URI, {
             useNewUrlParser: true/* 
             Remove them - New MongoDB comes with these preloaded
-            ,
+
             useUnifiedTopology: true,
             useFindAndModify: false,
             useCreateIndex: true */
