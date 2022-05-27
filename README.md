@@ -1,4 +1,4 @@
-# crud_app
+# CSE-341 Final Project
 
 # Step 1 - Project Initialization
 
