@@ -58,7 +58,6 @@ exports.find = (req, res)=>{
                 res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
             })
     }
-
     
 }
 
@@ -104,3 +103,4 @@ exports.delete = (req, res)=>{
             });
         });
 }
+
