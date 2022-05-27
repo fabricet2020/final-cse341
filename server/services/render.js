@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-
 exports.homeRoutes = (req, res) => {
     // Make a get request to /api/users
     axios.get('http://localhost:3000/api/users')
@@ -9,9 +8,7 @@ exports.homeRoutes = (req, res) => {
         })
         .catch(err =>{
             res.send(err);
-        })
-
-    
+        })   
 }
 
 exports.add_user = (req, res) =>{
