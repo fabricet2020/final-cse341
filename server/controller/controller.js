@@ -79,7 +79,7 @@ exports.update = (req, res)=>{
             }
         })
         .catch(err =>{
-            res.status(500).send({ message : "Error Update user information"})
+            res.status(500).send({ message : "Error Updating user information."})
         })
 }
 
