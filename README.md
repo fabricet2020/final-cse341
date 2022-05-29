@@ -36,5 +36,3 @@ views
 # Step 10 - DB
 
 Import some fonts (https://fonts.google.com/) Search for barlow Regular 400 and PT Sans Regular 400
-
-# Step 11 - API
