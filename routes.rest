@@ -1,0 +1,15 @@
+// LOCALHOST 
+
+### Create contact (insert data)
+POST http://localhost:3000/ HTTP/1.1
+content-type: application/json
+
+{
+    "username":"Derick", 
+    "email":"zedericke@test.com",
+    "password":"Marron123#",
+    "passwordConf":"Marron123#" 
+}
+
+
+ 

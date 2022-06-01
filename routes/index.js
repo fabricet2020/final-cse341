@@ -52,7 +52,7 @@ router.post('/', function(req, res, next) {
 
 			});
 		}else{
-			res.send({"Success":"password is not matched"});
+			res.send({"Success":"Password does not match"});
 		}
 	}
 });
