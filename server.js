@@ -13,14 +13,14 @@ mongoose.connect('mongodb+srv://fabricetb:Password123@cluster0.4vmps.mongodb.net
   useUnifiedTopology: true
 }, (err) => {
   if (!err) {
-    console.log('App Connected to MongoDB.');
+    console.log('MongoDB Connection Succeeded.');
   } else {
-    console.log('An Error was found while connecting to DB : ' + err);
+    console.log('Error in DB connection : ' + err);
   }
 });
 
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'DB Connection error:'));
+db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
 });
 

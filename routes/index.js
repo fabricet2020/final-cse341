@@ -45,14 +45,14 @@ router.post('/', function(req, res, next) {
 						});
 
 					}).sort({_id: -1}).limit(1);
-					res.send({"Success":"User successfully registered! Now, you can login."});
+					res.send({"Success":"You are regestered,You can login now."});
 				}else{
-					res.send({"Success":"Email already existed."});
+					res.send({"Success":"Email is already used."});
 				}
 
 			});
 		}else{
-			res.send({"Success":"Password does not match"});
+			res.send({"Success":"password is not matched"});
 		}
 	}
 });
@@ -70,13 +70,13 @@ router.post('/login', function (req, res, next) {
 				//console.log("Done Login");
 				req.session.userId = data.unique_id;
 				//console.log(req.session.userId);
-				res.send({"Success":"Correct data entered!"});
+				res.send({"Success":"Success!"});
 				
 			}else{
-				res.send({"Success":"Incorrect password!"});
+				res.send({"Success":"Wrong password!"});
 			}
 		}else{
-			res.send({"Success":"Email does not exist!"});
+			res.send({"Success":"This Email Is not regestered!"});
 		}
 	});
 });
@@ -119,7 +119,7 @@ router.post('/forgetpass', function (req, res, next) {
 	User.findOne({email:req.body.email},function(err,data){
 		console.log(data);
 		if(!data){
-			res.send({"Success":"Email does not exist!"});
+			res.send({"Success":"This Email Is not regestered!"});
 		}else{
 			// res.send({"Success":"Success!"});
 			if (req.body.password==req.body.passwordConf) {
@@ -131,10 +131,10 @@ router.post('/forgetpass', function (req, res, next) {
 					console.log(err);
 				else
 					console.log('Success');
-					res.send({"Success":"Password successfully changed!"});
+					res.send({"Success":"Password changed!"});
 			});
 		}else{
-			res.send({"Success":"Password does not matched!"});
+			res.send({"Success":"Password does not matched! Both Password should be same."});
 		}
 		}
 	});

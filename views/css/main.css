@@ -17,64 +17,11 @@ p{
 input{
 	text-align: center;
 }
+input[type=text]:hover {
+    background-color: #fac2cb;
+  }
 .mssg{
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-radius: 5px;
 }
-
-/* Style inputs */
-input[type=text], input[type=password], input[type=email], select, textarea , input[type=number]{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=text]:hover {
-    background-color: #fac2cb;
-  }
-  input[type=password]:hover {
-    background-color: #fac2cb;
-  } 
-  input[type=email]:hover {
-    background-color: #fac2cb;
-  } 
-
-  input[type=submit] {
-    background-color: #1abc9c;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  }
