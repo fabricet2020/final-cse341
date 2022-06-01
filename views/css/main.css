@@ -20,6 +20,22 @@ input{
 input[type=text]:hover {
     background-color: #fac2cb;
   }
+input[type=password]:hover {
+    background-color: #fac2cb;
+  }
+input[type=email]:hover {
+    background-color: #fac2cb;
+  }
+
+input[type=submit] {
+background-color: #1abc9c;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
 .mssg{
 	margin-top: 5px;
 	margin-bottom: 5px;
